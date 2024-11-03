@@ -1,5 +1,5 @@
 import './App.css'
-import Register from "./components/Register.jsx";
+import HookExam from "./components/HookExam.jsx";
 
 
 
@@ -7,7 +7,7 @@ import Register from "./components/Register.jsx";
 function App() {
     return (
         <>
-            <Register/>
+            <HookExam/>
         </>
     )
 }

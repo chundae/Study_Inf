@@ -41,3 +41,10 @@ Currently, two official plugins are available:
    - state의 상태가 변경 시
    - props의 값을 전달 받는 경우
    - 부모의 컴포넌트가 state 상태가 변경되면 자식 컴포넌트도 리렌더링 진행
+
+### useRef
+- 새로운 Reference 객체를 생성하는기능
+- `const refObject = useRef();` 컴포넌트 내부의 변수
+- useRef는 어떤 경우에도 리렌더링을 유발하지 않음(렌더링에 영향이 없음)
+- 특정 요소에 접근하여 조작을 할 수 있음.
+- 
