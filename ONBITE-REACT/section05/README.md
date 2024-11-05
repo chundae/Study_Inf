@@ -15,7 +15,26 @@
 >
 > State 끌어올리기라고 하며 여러 컴포넌트에서사용되는 State를 사용되는 컴포넌트 상위 컴포넌트에 배치시킨다는 의미이다.
 
+```javascript
+function App() {
+    const [count, setCount] = useState(0);
+    const onClickButton = (value) => {
+        setCount(count + value);
+    }
 
+    return (
+        <div className="App">
+            <h1>Simple Counter</h1>
+            <section>
+                <Viewer count = {count} />
+            </section>
+            <section>
+                <Controller onClickButton={onClickButton}/>
+            </section>
+        </div>
+    )
+}
+```
 
 ---
 
@@ -45,5 +64,36 @@ Mount -> Update -> UnMount 순으로 라이프사이클을 지니고 있다.
 ## useEffect
 
 > Side Effect  
-우리말로 "부작용"이라는 뜻
+> 우리말로 "부작용"이라는 뜻
 ~에 의해 파생되는 효과, ~에 의한 부수적인 효과를 의미
+
+```javascript
+//인수로는 콜백함수와 배열(**의존성배열 -> deps(dependence Array)**)을 넣는다.
+//두번째 인수로 전달한 배열의 값이 바뀌면 콜백함수를 실행
+useEffect(() => {
+}, []);
+```
+
+- 사용
+```javascript
+function App() {
+    const [count, setCount] = useState(0);
+    const [input, setInput] = useState("");
+
+    useEffect(() => {
+        console.log(`count: ${count} / input: ${input}`)
+    }, [count, input]);
+
+
+    const onClickButton = (value) => {
+        setCount(count + value);
+    }
+}
+```
+위 코드를 살펴보면 count / Input 의 변경이 이루어지면 log를 띄우도록 useEffect를 설정하였다.
+여기서 하나의 의문점이 생긴다.
+그냥 `onclickButton`이벤트핸들러에서 log를 띄우면 되는거 아닌가?하는 의문이 생기는데
+이렇게 해본결과 controller에서 값을 증가하는 버튼을 눌렀지만 `onClickButton`에서 출력하는 log는 기존(이전)값인 0이 출력되는 오류를 확인햇다.
+
+왜그럴까 찾아보니 React는 비동기로 이벤트를 처리하기 떄문에 실행기 된거같으면서도 아직 완료가 되지 않는 상태이기때문에 그렇게 출력되는 것이다. 
+따라서 변경된 값을 바로바로 확인하기 위헤서는 이벤트핸들러에 log를 출력하는 것이 아닌 useEffect를 사용해야 한다.
