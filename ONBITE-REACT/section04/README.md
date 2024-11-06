@@ -47,4 +47,15 @@ Currently, two official plugins are available:
 - `const refObject = useRef();` 컴포넌트 내부의 변수
 - useRef는 어떤 경우에도 리렌더링을 유발하지 않음(렌더링에 영향이 없음)
 - 특정 요소에 접근하여 조작을 할 수 있음.
+
+### React Hooks
+- 클래스 컴포넌트의 기능을 함수 컴포넌트에서도 이용할 수 있도록 만들어주는 기능
+
+  - 과거에는 Class 컴포넌트에서만 리엑트의 모든 기능을 사용할 수 있었고, Function 컴포넌트에서는 UI 렌더링만을 지원했었음.
+  - class 컴포넌트는 문법이 복잡하여 Function 컴포넌트에서 사용하고싶어ㅅ 했음
+  - 해서 만들어진 것이 바로 React Hooks이다.
+- React Hooks 는 우리가 공부하면서 사용했던 `useState()`와 같은 것이 훅으로 기존 class컴포넌트에서는 state로서 사용되었다.
+
+  - 위 `useState()`처럼 기존 Class 컴포넌트에서 사용하는 기능에 Use 를 붙힘으로서 함수 컴포넌트에서도 사용할 수 있게됨.
+- 함수 컴포넌트 내부에서만 사용이 가능하고 조건문, 반복문에서는 호출이 불가능하다는 특징이 있다.
 - 
