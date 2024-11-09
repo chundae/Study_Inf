@@ -1,4 +1,4 @@
-import { useRef, useReducer, useCallback } from 'react'
+import {useRef, useReducer, useCallback, createContext, useMemo} from 'react'
 
 import './App.css'
 import Header from "./components/Header.jsx";
@@ -25,6 +25,9 @@ const mockData= [
   },
 
 ]
+//Context는 컴포넌트 외부에 생성
+export const TodoStateContext = createContext();
+export const TodoDispatchContext = createContext();
 
 function reducer (state, action) {
   switch (action.type) {
@@ -71,11 +74,19 @@ function App() {
     })
   }, []);
 
+  const memoizedDispatch = useMemo(()=>{
+    return {onDelete,onCreate, onUpdate};
+  }, [])
+
   return (
     <div className="App">
         <Header/>
-        <Editor onCreate={onCreate}/>
-        <List todos={todos} onUpdate={onUpdate} onDelete={onDelete}/>
+      <TodoStateContext.Provider value={todos}>
+        <TodoDispatchContext.Provider value={memoizedDispatch}>
+        <Editor/>
+        <List />
+        </TodoDispatchContext.Provider>
+      </TodoStateContext.Provider>
     </div>
   )
 }

@@ -1,8 +1,11 @@
 import './Editor.css';
-import {useState, useRef} from "react";
+import {useState, useRef, useContext} from "react";
+import {TodoDispatchContext, TodoStateContext} from "../App.jsx";
 
-const Editor = ({onCreate}) => {
+const Editor = () => {
 
+    //App.jsx 에서 전달한 Context 데이터를 전달받기
+    const {onCreate} = useContext(TodoDispatchContext);
     const [content, setContent] = useState("");
     const contentRef = useRef();
     const onChangeContent = (e) => {
