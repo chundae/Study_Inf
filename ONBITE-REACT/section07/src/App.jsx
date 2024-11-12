@@ -2,10 +2,10 @@ import './App.css'
 import Home from "./pages/Home.jsx";
 import Diary from "./pages/Diary.jsx";
 import New from "./pages/New.jsx";
-import {Routes, Route, Link, useNavigate} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import NotFoundPage from "./pages/Notfound.jsx";
 import Edit from "./pages/Edit.jsx";
-import {createContext, useContext, useReducer, useRef} from "react";
+import {createContext, useReducer, useRef} from "react";
 
 const mockData = [
     {
@@ -81,27 +81,13 @@ function App() {
             }
         })
     }
-
+    {/*provider로 묶어줌으로써 아래 페이지에서 데이터를사용 할 수 있게함.*/}
     return (
         <>
-            <button onClick={() => {
-                onCreate(new Date().getTime(), 1, "Hello");
-            }}>일기 추가 테스트
-            </button>
-
-            <button onClick={() => {
-                onUpdate(1, new Date().getTime(), 3, "Update");
-            }}>수정 버튼
-            </button>
-
-            <button onClick={() => {
-                onDelete(1)
-            }}>삭제 버튼
-            </button>
-
-            {/*provider로 묶어줌으로써 아래 페이지에서 데이터를사용 할 수 있게함.*/}
             <DiaryStateContext.Provider value={data}>
-                <DiaryDispatchContext.Provider value={{onCreate, onUpdate, onDelete}}>
+                <DiaryDispatchContext.Provider value={
+                    {onCreate, onUpdate, onDelete}
+                }>
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/new" element={<New/>}/>
