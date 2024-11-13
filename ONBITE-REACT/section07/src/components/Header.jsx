@@ -2,6 +2,7 @@ import './Header.css'
 import Button from "./Button.jsx";
 
 const Header = ({title, leftChild, rightChild}) => {
+
     return (
         <header className="Header">
             <div className="header_left">{leftChild}</div>

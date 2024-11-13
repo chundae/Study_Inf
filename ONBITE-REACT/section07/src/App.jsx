@@ -2,10 +2,11 @@ import './App.css'
 import Home from "./pages/Home.jsx";
 import Diary from "./pages/Diary.jsx";
 import New from "./pages/New.jsx";
-import {Routes, Route} from "react-router-dom";
 import NotFoundPage from "./pages/Notfound.jsx";
 import Edit from "./pages/Edit.jsx";
 import {createContext, useReducer, useRef} from "react";
+import {Routes, Route} from "react-router-dom";
+
 
 const mockData = [
     {
