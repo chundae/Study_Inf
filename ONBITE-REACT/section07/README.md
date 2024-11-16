@@ -6,6 +6,11 @@
 3. "/diary" : 일기를 상세히 조회하는 페이지
 
 
+## 기능
+1. "/"에서 날짜와 생성했던 다이어리 데이터를 식별하도록 함.
+2. 수정 페이지에서 이모션과 내용 등 다이어리데이터 수정
+3. 메인페이지에서 날짜 필터링을 통해 정렬기능
+
 >12.11) Home 페이지 구현하기 2. 기능
 >Sort 메서드 비교함수 관련 아티클
 >https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
@@ -200,13 +205,22 @@
 
 - usePageTitle.jsx
   - 페이지를 렌더링을 진행할때 최상단 탭 title명을 설정하기 위한 hook
-
+  ```javascript
+  const usePageTitle = (title) => {
+  useEffect(()=>{
+  //돔 요소를 가져오는 변수명 $추가
+  const $title = document.getElementsByTagName("title")[0]
+  $title.innerText = title
+  },[title])
+  }
+  ```
 
 ## Util Method
 
 - get-emotion-image.js / constants.js
   - 두개의 js함수는 각각 감정 이미지를 불러오는 함수와 감정에 할당한 이름을 불러오는 함수이다.
-
+  - `get-emotin-image`는 이모션 아이디를 props로 전달받아 이미지를 불러오는 함수.
+  - `constant`는 이모션에 특징에 따른 이름을 항당해 객체형대로 리턴하는 함수.
 
 - getStringedDate.js
   - `targetDate`를 Props로 전달 받아 10미만의 월 / 일 이면 앞에 0을 붙혀주는 함수이다.
