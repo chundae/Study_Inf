@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1163d2e-e8ac-4837-b7c5-0c2667c01bf6" name="Changes" comment="spring basic setting">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/discount/RateDiscountPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/discount/RateDiscountPolicyTest.java" afterDir="false" />
+    <list default="true" id="d1163d2e-e8ac-4837-b7c5-0c2667c01bf6" name="Changes" comment="DIP / OCP 원칙 연습">
+      <change afterPath="$PROJECT_DIR$/IoC&amp;DI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/appConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beandefinition/BeanDefinitionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextBasicFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextExtendsFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/xml/XmlAppContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Inf_JAVA/Inflearn" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inf_JAVA/Inflearn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Inf_Python" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inf_Python" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/MemberApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/MemberApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/OrderApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/OrderApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/member/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/member/MemberServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/core/order/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/core/order/OrderServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../blog/blog" beforeDir="false" afterPath="$PROJECT_DIR$/../../blog/blog" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +38,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="package-info" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -43,21 +47,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "chundae"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chundae&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:chundae/Study_Inf.git",
-    "accountId": "82a354f5-c899-4cfe-b765-28d703fba0dd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:chundae/Study_Inf.git&quot;,
+    &quot;accountId&quot;: &quot;82a354f5-c899-4cfe-b765-28d703fba0dd&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2pVZsFc73bx51b2EzR5ZBjAXzu0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -65,15 +69,34 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.MemberApp.executor": "Run",
+    "Application.MemberApp.executor": "Debug",
     "Application.OrderApp.executor": "Run",
     "Gradle.Build core.executor": "Run",
     "JUnit.All in core.test.executor": "Run",
+    "JUnit.ApplicationContextBasicFindTest.executor": "Run",
+    "JUnit.ApplicationContextBasicFindTest.findBeanByName.executor": "Run",
+    "JUnit.ApplicationContextBasicFindTest.findBeanByName2.executor": "Run",
+    "JUnit.ApplicationContextBasicFindTest.findBeanByNameX.executor": "Run",
+    "JUnit.ApplicationContextBasicFindTest.findBeanByType.executor": "Run",
+    "JUnit.ApplicationContextExtendsFindTest.FindAllBeanByObjectType.executor": "Run",
+    "JUnit.ApplicationContextExtendsFindTest.FindAllBeanByParentType.executor": "Run",
+    "JUnit.ApplicationContextExtendsFindTest.findBeanByParentTypeBeanName.executor": "Run",
+    "JUnit.ApplicationContextExtendsFindTest.findBeanByParentTypeDuplicate.executor": "Run",
+    "JUnit.ApplicationContextExtendsFindTest.findBeanBySubType.executor": "Run",
+    "JUnit.ApplicationContextInfoTest.findAllBean.executor": "Run",
+    "JUnit.ApplicationContextInfoTest.findApplicationBean.executor": "Run",
+    "JUnit.ApplicationContextSameBeanFindTest.executor": "Run",
+    "JUnit.ApplicationContextSameBeanFindTest.findAllBeanByType.executor": "Run",
+    "JUnit.ApplicationContextSameBeanFindTest.findBeanByName.executor": "Run",
+    "JUnit.ApplicationContextSameBeanFindTest.findBeanByTypeDuplicate.executor": "Run",
+    "JUnit.BeanDefinitionTest.executor": "Run",
+    "JUnit.BeanDefinitionTest.findApplicationBean.executor": "Run",
     "JUnit.MemberServiceTest.join.executor": "Run",
     "JUnit.OrderServiceTest.order.executor": "Run",
     "JUnit.RateDiscountPolicyTest.executor": "Run",
     "JUnit.RateDiscountPolicyTest.vip_o.executor": "Run",
     "JUnit.RateDiscountPolicyTest.vip_x.executor": "Run",
+    "JUnit.XmlAppContext.xmlAppContext.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -104,68 +127,82 @@
       <recent name="hello.core.discount" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OrderApp">
-    <configuration name="MemberApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hello.core.MemberApp" />
-      <module name="core.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hello.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hello.core.OrderApp" />
-      <module name="core.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="hello.core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in core.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="core.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MemberServiceTest.join" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BeanDefinitionTest">
+    <configuration name="ApplicationContextExtendsFindTest.FindAllBeanByObjectType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hello.core.member.*" />
+          <option name="PATTERN" value="hello.core.beanfind.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="hello.core.member" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.member.MemberServiceTest" />
-      <option name="METHOD_NAME" value="join" />
+      <option name="PACKAGE_NAME" value="hello.core.beanfind" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextExtendsFindTest" />
+      <option name="METHOD_NAME" value="FindAllBeanByObjectType" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RateDiscountPolicyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationContextExtendsFindTest.FindAllBeanByParentType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="core.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="hello.core.discount.*" />
+          <option name="PATTERN" value="hello.core.beanfind.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="hello.core.discount" />
-      <option name="MAIN_CLASS_NAME" value="hello.core.discount.RateDiscountPolicyTest" />
+      <option name="PACKAGE_NAME" value="hello.core.beanfind" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beanfind.ApplicationContextExtendsFindTest" />
+      <option name="METHOD_NAME" value="FindAllBeanByParentType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeanDefinitionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.core.beandefinition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.core.beandefinition" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beandefinition.BeanDefinitionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BeanDefinitionTest.findApplicationBean" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.core.beandefinition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.core.beandefinition" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.beandefinition.BeanDefinitionTest" />
+      <option name="METHOD_NAME" value="findApplicationBean" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XmlAppContext.xmlAppContext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.core.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hello.core.xml" />
+      <option name="MAIN_CLASS_NAME" value="hello.core.xml.XmlAppContext" />
+      <option name="METHOD_NAME" value="xmlAppContext" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -179,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OrderApp" />
-        <item itemvalue="JUnit.All in core.test" />
-        <item itemvalue="JUnit.MemberServiceTest.join" />
-        <item itemvalue="Application.MemberApp" />
-        <item itemvalue="JUnit.RateDiscountPolicyTest" />
+        <item itemvalue="JUnit.BeanDefinitionTest" />
+        <item itemvalue="JUnit.BeanDefinitionTest.findApplicationBean" />
+        <item itemvalue="JUnit.XmlAppContext.xmlAppContext" />
+        <item itemvalue="JUnit.ApplicationContextExtendsFindTest.FindAllBeanByObjectType" />
+        <item itemvalue="JUnit.ApplicationContextExtendsFindTest.FindAllBeanByParentType" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +240,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732853407689</updated>
-      <workItem from="1732853408675" duration="8416000" />
+      <workItem from="1732853408675" duration="9009000" />
+      <workItem from="1733032449421" duration="8226000" />
     </task>
     <task id="LOCAL-00001" summary="spring basic setting">
       <option name="closed" value="true" />
@@ -213,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732862025871</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="DIP / OCP 원칙 연습">
+      <option name="closed" value="true" />
+      <created>1732866868528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732866868528</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,22 +267,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring basic setting" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring basic setting" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/hello/core/MemberApp.java</url>
-          <line>9</line>
-          <properties class="hello.core.MemberApp" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="DIP / OCP 원칙 연습" />
+    <option name="LAST_COMMIT_MESSAGE" value="DIP / OCP 원칙 연습" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
