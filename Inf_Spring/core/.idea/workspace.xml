@@ -5,49 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1163d2e-e8ac-4837-b7c5-0c2667c01bf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.11.1/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.11.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.11.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/8.11.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/CoreApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/MemberApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/OrderApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/discount/DiscountPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/discount/FixDiscountPolicy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/Grade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemberServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/member/MemoryMemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/core/order/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/CoreApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/member/MemberServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/hello/core/order/OrderServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/dependency.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/System/LangMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/Child.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/ObjectMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/equals/EqualsNameV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/equals/EqualsNameV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/equals/UserV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/equals/UserV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/equals/UserV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/poly/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/poly/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/poly/ObjectPolyMain1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/poly/ObjectPolyMain2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/tostring/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/tostring/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/tostring/ObjectPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/tostring/ToStringMain1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/lang/object/tostring/ToStringMain2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_TS/src/section0/hello.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Inf_TS/src/section0/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Inf_JAVA/Inflearn" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inf_JAVA/Inflearn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/poly/ex/pay1/PayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/poly/ex/pay1/PayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/poly/ex/pay1/PayStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inf_JAVA/java_min/src/poly/ex/pay1/PayStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Inf_Python" beforeDir="false" afterPath="$PROJECT_DIR$/../../Inf_Python" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ONBITE-REACT/section07/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../ONBITE-REACT/section07/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../blog/blog" beforeDir="false" afterPath="$PROJECT_DIR$/../../blog/blog" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,53 +54,53 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "chundae"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chundae&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:chundae/Study_Inf.git",
-    "accountId": "82a354f5-c899-4cfe-b765-28d703fba0dd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:chundae/Study_Inf.git&quot;,
+    &quot;accountId&quot;: &quot;82a354f5-c899-4cfe-b765-28d703fba0dd&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2pVZsFc73bx51b2EzR5ZBjAXzu0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MemberApp.executor": "Run",
-    "Application.OrderApp.executor": "Run",
-    "Gradle.Build core.executor": "Run",
-    "JUnit.MemberServiceTest.join.executor": "Debug",
-    "JUnit.OrderServiceTest.order.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.CoreApplication.executor": "Run",
-    "git-widget-placeholder": "java",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MemberApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OrderApp.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build core.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MemberServiceTest.join.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.OrderServiceTest.order.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CoreApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;java&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.OrderServiceTest.order">
     <configuration name="MemberApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hello.core.MemberApp" />
@@ -211,6 +193,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732853407689</updated>
       <workItem from="1732853408675" duration="4013000" />
+      <workItem from="1733214073261" duration="1000" />
     </task>
     <servers />
   </component>
